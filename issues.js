@@ -25,7 +25,7 @@ function getAllIssues(url,folderName,fileName) {
         for(let i=0;i<8;i++){
             let link=selecTool(issuesarr[i]).attr("href");
             // console.log(link);
-            arr.push(link);
+            arr[i]=link;
         }
         let folderPath=path.join(__dirname,folderName,);
             console.log(folderPath);
